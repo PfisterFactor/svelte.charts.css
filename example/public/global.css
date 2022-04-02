@@ -1,0 +1,111 @@
+:root {
+    --primary: #f57;
+    --secondary: #666;
+    --off-black: #282828;
+    --off-white: #dcdcdc;
+    --white: #fff;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: #282828;
+    background: #dcdcdc;
+}
+a {
+    color: #f57;
+}
+h1, h2, h3, h4, h5, p {
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+.buttons-wrapper {
+    padding: 1rem 0;
+    margin: -0.1rem 0;
+}
+.options > div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.25rem;
+}
+.options > div label {
+    display: inline-block;
+    padding: 0 0.2rem;
+    background: #ffffff;
+    color: #f57;
+}
+.options > div input:not([type=checkbox]) {
+    width: 8rem;
+    margin: 0.1rem 0;
+}
+input:not([type=checkbox]), textarea {
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.5);
+}
+textarea {
+    width: 100%;
+}
+.options > div > label {
+    margin: 0 0.5rem;
+}
+button {
+    border: 0;
+    background-color: #f57;
+    margin: 0.1rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+button:hover, button:focus {
+    opacity: 0.9;
+    background-color: #f57;
+}
+button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.svelte-charts-css {
+    margin-bottom: 4rem;
+}
+.svelte-charts-css td {
+    transition: width 0.2s ease, height 0.2s ease, transform 0.2s ease;
+    will-change: width, height;
+}
+.svelte-charts-css .heading input, .svelte-charts-css th[scope=row] input {
+    display: inline-block;
+}
+.svelte-charts-css th[scope=row] input {
+    text-align: center;
+}
+.svelte-charts-css input.data-number {
+    display: inline-block;
+    max-width: 6em;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+.svelte-charts-css table.charts-css {
+    min-height: 16rem;
+}
+.svelte-charts-css table.charts-css tbody {
+    flex-grow: 1;
+}
+.svelte-charts-css .charts-css {
+    padding: 1rem;
+    background: #dcdcdc;
+}
+.svelte-charts-css .charts-css .heading {
+    --heading-size: 2rem;
+    font-weight: bold;
+}
+.svelte-charts-css .charts-css.legend {
+    margin-bottom: 1rem;
+    background: #666;
+    color: #dcdcdc;
+}
