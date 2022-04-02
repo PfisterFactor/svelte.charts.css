@@ -45,8 +45,8 @@ export default {
 			plugins: [
 				// we only want to run this once, so we'll just make it part of this output's plugins
 				execute([
-					"node scripts/preprocess.js",
 					"tsc --outDir ./dist --declaration",
+					"node scripts/preprocess.js",
 				]),
 			],
 		},
