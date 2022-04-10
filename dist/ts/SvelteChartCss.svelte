@@ -228,3 +228,10 @@
     </slot>
     {/if}
 </div>
+
+<style>
+    .svelte-chart-css {
+        width: 100%;
+        height: 100%;
+    }
+</style>
