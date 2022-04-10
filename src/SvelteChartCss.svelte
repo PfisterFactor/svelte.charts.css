@@ -230,7 +230,7 @@
 </div>
 
 <style>
-    .svelte-chart-css {
+    .svelte-charts-css {
         width: 100%;
         height: 100%;
     }
